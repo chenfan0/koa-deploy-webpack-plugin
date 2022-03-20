@@ -1,5 +1,5 @@
 const { join, extend } = require("./lib/utilis");
-const { runInstallCommand } = require("./lib/command");
+const { runCommand } = require("./lib/command");
 const { PLUGIN_NAME } = require("./lib/constant");
 const initialLocalProject = require("./lib/initialProject");
 
@@ -26,8 +26,7 @@ class KoaDeployWebpackPlugin {
       const projectPort = this.projectConfig.port;
       const localProjectPath = join(process.cwd(), projectName);
       initialLocalProject(webpackBuildPath, localProjectPath, projectPort);
-      // 安装服务器脚本依赖
-      runInstallCommand(this.sshConfig, this.projectConfig);
+      runCommand(this.sshConfig, this.projectConfig);
     });
   }
 }
