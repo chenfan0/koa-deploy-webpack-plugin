@@ -27,11 +27,7 @@ class KoaDeployWebpackPlugin {
       const localProjectPath = join(process.cwd(), projectName);
       initialLocalProject(webpackBuildPath, localProjectPath, projectPort);
       // 安装服务器脚本依赖
-      try {
-        await runInstallCommand(this.sshConfig, this.projectConfig);
-      } catch (err) {
-        console.log(err.red);
-      }
+      runInstallCommand(this.sshConfig, this.projectConfig);
     });
   }
 }
