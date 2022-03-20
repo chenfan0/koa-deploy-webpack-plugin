@@ -1,0 +1,10 @@
+{
+  "name": "koa-deploy-webpack-plugin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "node-ssh": "^12.0.4"
+  }
+}
