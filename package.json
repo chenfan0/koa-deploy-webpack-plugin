@@ -1,8 +1,19 @@
 {
   "name": "koa-deploy-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "description": "Automatic deployment project",
+  "author": "chenfan <1490040662@qq.com> (https://github.com/chenfan0)",
   "main": "index.js",
   "license": "MIT",
+  "keywords": [
+    "webpack",
+    "plugin",
+    "deploy",
+    "koa",
+    "pm2"
+  ],
+  "homepage": "https://github.com/chenfan0/koa-deploy-webpack-plugin",
+  "repository": "https://github.com/chenfan0/koa-deploy-webpack-plugin.git",
   "dependencies": {
     "colors": "^1.4.0",
     "node-ssh": "^12.0.4"
