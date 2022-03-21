@@ -16,6 +16,9 @@ module.exports = {
         path: "/root", // 项目存放于服务器的位置，默认为/
         port: 8080, // 项目运行的端口号，默认为8080
       },
+      compress: {
+        test: /\.(css|js)$/i,
+      },
     }),
   ],
 };

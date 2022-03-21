@@ -1,3 +1,5 @@
+const compressionPlugin = require("compression-webpack-plugin");
+
 const { join, extend } = require("./lib/utilis");
 const { runCommand } = require("./lib/command");
 const { PLUGIN_NAME } = require("./lib/constant");
@@ -16,8 +18,13 @@ class KoaDeployWebpackPlugin {
     };
     this.sshConfig = extend(defaultSshConfig, config.ssh);
     this.projectConfig = extend(defaultProjectConfig, config.project);
+    this.compressConfig = config.compress || {};
   }
   apply(compiler) {
+    // use compression-webpack-plugin
+    const compress = new compressionPlugin(this.compressConfig);
+    compress.apply(compiler);
+
     compiler.hooks.done.tap(PLUGIN_NAME, async ({ compilation }) => {
       const { outputOptions } = compilation;
       const webpackBuildPath = outputOptions.path;
