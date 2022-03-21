@@ -9,7 +9,9 @@
 <img src="https://raw.githubusercontent.com/unitech/pm2/master/pres/pm2.20d3ef.png" alt="pm2-logo" style="" />
 
 <div align='left'>
-
+ 
+# 介绍
+ **该插件可以帮助你将打包后的文件自动上传到服务器并进行部署。**
 # 前提
   该插件最终会在服务器上执行pm2命令。所以**你的服务器必须要有pm2**。
 # 安装
