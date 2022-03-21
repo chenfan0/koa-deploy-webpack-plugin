@@ -1,4 +1,3 @@
-# koa-deploy-webpack-plugin
 <div align='center'>
 
 # koa-deploy-webpack-plugin
