@@ -1,6 +1,6 @@
 {
   "name": "koa-deploy-webpack-plugin",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Automatic deployment project",
   "author": "chenfan <1490040662@qq.com> (https://github.com/chenfan0)",
   "main": "index.js",
@@ -17,5 +17,8 @@
   "dependencies": {
     "colors": "^1.4.0",
     "node-ssh": "^12.0.4"
+  },
+  "engines": {
+    "node": ">=16.7.0"
   }
 }
