@@ -52,7 +52,6 @@ module.exports = {
          test: /\.(css|js)$/i,
        },
        staticConfig: {
-         history: true,  // 启动history模式
          maxage: {   // 设置缓存时间
            html: 0,
            js: 100000,

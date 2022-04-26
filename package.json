@@ -1,6 +1,6 @@
 {
   "name": "koa-deploy-webpack-plugin",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "Automatic deployment project",
   "author": "chenfan <1490040662@qq.com> (https://github.com/chenfan0)",
   "main": "index.js",
